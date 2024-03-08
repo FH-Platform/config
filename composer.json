@@ -26,7 +26,8 @@
         "doctrine/doctrine-bundle": "2.*",
         "doctrine/orm": "2.*",
         "doctrine/common" : "*",
-        "symfony/yaml": "7.*"
+        "symfony/yaml": "7.*",
+        "fh-platform/util": "dev-master"
     },
     "require-dev": {
         "friendsofphp/php-cs-fixer": "3.*",

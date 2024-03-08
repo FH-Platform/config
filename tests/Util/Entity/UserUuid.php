@@ -13,23 +13,23 @@ class UserUuid
     #[ORM\Column(type: 'uuid', unique: true)]
     #[ORM\GeneratedValue(strategy: 'CUSTOM')]
     #[ORM\CustomIdGenerator(class: UuidGenerator::class)]
-    public ?UuidInterface $uuid = null;
+    public ?UuidInterface $id = null;
 
     #[ORM\Column(type: 'string', nullable: true)]
-    private ?string $name = '';
+    private ?string $nameString = '';
 
-    public function getUuid(): ?UuidInterface
+    public function getId(): ?UuidInterface
     {
-        return $this->uuid;
+        return $this->id;
     }
 
-    public function getName(): ?string
+    public function getNameString(): ?string
     {
-        return $this->name;
+        return $this->nameString;
     }
 
-    public function setName(?string $name): void
+    public function setNameString(?string $nameString): void
     {
-        $this->name = $name;
+        $this->nameString = $nameString;
     }
 }
